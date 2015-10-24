@@ -61,7 +61,7 @@ Tested on OSX 10.10.
 Usage
 -----
 
-It appends the docker-machine hosts to the ``/etc/hosts`` but before creates a backup too. (``/etc/hosts.0``)
+It makes a backup of the exists hostfile (``/etc/hosts.0``) then appends the docker-machine hosts.
 
 .. code::
 
