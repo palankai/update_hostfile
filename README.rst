@@ -62,6 +62,7 @@ Usage
 -----
 
 It makes a backup of the exists hostfile (``/etc/hosts.0``) then appends the docker-machine hosts.
+The ``docker-machine`` have to be installed!
 
 .. code::
 
