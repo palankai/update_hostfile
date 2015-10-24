@@ -14,28 +14,28 @@ any comment.
 Goal
 ----
 
-Take the output of `docker-machine ls` grab the name of the machine and the
-IP address. Create a hostfile entry like `192.168.99.100 default.docker.local`.
-Finally append (or replace the exists entries) in `/etc/hosts`.
+Take the output of ``docker-machine ls`` grab the name of the machine and the
+IP address. Create a hostfile entry like ``192.168.99.100 default.docker.local``.
+Finally append (or replace the exists entries) in ``/etc/hosts``.
 
 Why C++
 -------
 
-If you want to update the `/etc/hosts` file you have to use `sudo` so I've
-decided to use the `chmod +s` command and make it owned by root. As you know
+If you want to update the` `/etc/hosts`` file you have to use ``sudo`` so I've
+decided to use the ``chmod +s`` command and make it owned by root. As you know
 bash doesn't allow that on any scripts. However yhe compiled C++ code is
 accepted. (Tbh, I really wanted to write something small in C++ too ;))
 
 Compile
 -------
 
-I hope a simle `make` would compile it on your machine as well. I'm using it
+I hope a simle ``make`` would compile it on your machine as well. I'm using it
 on OSX, I hope it could be compiled on linux as well.
 
 Install and usage
 -----------------
 
-Put the output to `/usr/local/sbin` folder and execute the `update_hostfile`
+Put the output to ``/usr/local/sbin`` folder and execute the ``update_hostfile``
 command.
 
-It creates a backup of the hosts file. (`/etc/hosts.0`)
+It creates a backup of the hosts file. (``/etc/hosts.0``)
